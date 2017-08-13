@@ -66,16 +66,14 @@ wget --no-check-certificate -qO 'BBR_POWERED.sh' 'https://raw.githubusercontent.
 
 * **说明**
 
-执行过程中会重新编译模块;
+执行过程中会重新编译模.
 
-模块默认为开机自动加载;
+模块默认为开机自动加载.
 
-模块名称:*tcp_bbr_powered*
+模块名称:*tcp_bbr_powered*.
 
 可用 `modprobe tcp_bbr_powered` 命令进行加载模块.
 
-可执行 `lsmod |grep 'bbr_powered'` 
-
-结果不为空,则加载模块成功
+可执行 `lsmod |grep 'bbr_powered'` ，结果不为空,则加载模块成功.
 
 可执行 `sysctl -w net.ipv4.tcp_congestion_control=bbr_powered` 使用此模块.
