@@ -43,4 +43,4 @@ bash BBR.sh -f v4.11.9
 lsmod |grep 'bbr'
 ```
 
-* [**【强制模式】预览**] (https://ws1.sinaimg.cn/large/005YWgzely1fiib21ccgsj30hu05aglo.jpg)
+* [**【强制模式】预览**](https://ws1.sinaimg.cn/large/005YWgzely1fiib21ccgsj30hu05aglo.jpg)
