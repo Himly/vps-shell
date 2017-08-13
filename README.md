@@ -141,7 +141,7 @@ wget --no-check-certificate -qO 'BBR_POWERED.sh' 'https://raw.githubusercontent.
 
 ## serverspeeder.sh
 
-* **说明：锐速破解版linux一键自动安装包**
+* **说明**：锐速破解版linux一键自动安装包
 * **安装**
 ```bash
 wget -N --no-check-certificate https://raw.githubusercontent.com/Himly/vps-shell/master/serverspeeder.sh
