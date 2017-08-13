@@ -17,6 +17,23 @@ apt-get -y update
 apt-get -y install wget
 ```
 
+## AutoBackupToFtp.sh
+
+* **说明：自动备份网站文件和数据库并上传到FTP空间**
+* **安装**
+```bash
+#1.首先安装EMAIL发送组件
+yum install sendmail mutt
+
+#2.新建本地备份目录
+mkdir -p /home/backup
+
+#3.安装AutoBackupToFtp.sh
+wget -N --no-check-certificate https://raw.githubusercontent.com/Himly/vps-shell/master/AutoBackupToFtp.sh
+chmod +x ssrmu.sh
+bash AutoBackupToFtp.sh
+```
+
 ## BBR.sh
 
 * **说明：Debian/Ubuntu 开启 TCP BBR 拥塞算法**
