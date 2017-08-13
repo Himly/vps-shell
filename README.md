@@ -84,7 +84,7 @@ wget --no-check-certificate -qO 'BBR_POWERED.sh' 'https://raw.githubusercontent.
 
 如遇报错: `Error! Header not be matched by Linux Kernel` .
 
-请重新开启**BBR**，或使用 `-f` 参数.可参考上面的准备步骤.
+请重新开启**BBR**，或使用 `-f` 参数，可参考上面的准备步骤.
 
 如遇报错: `Error! Install make或Error! Install gcc` .
 
