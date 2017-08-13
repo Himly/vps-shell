@@ -5,7 +5,7 @@
 
 ### 基本库安装
 
-* **CentOS**
+* CentOS
 ```bash
 yum -y updade
 yum -y install wget
