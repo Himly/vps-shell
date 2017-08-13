@@ -44,3 +44,4 @@ lsmod |grep 'bbr'
 ```
 
 * **【强制模式】预览**
+![BBR](https://ws1.sinaimg.cn/large/005YWgzely1fiib21ccgsj30hu05aglo.jpg "这是BBR的图标")
