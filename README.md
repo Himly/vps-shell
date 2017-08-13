@@ -30,7 +30,7 @@ mkdir -p /home/backup
 
 #3.安装AutoBackupToFtp.sh
 wget -N --no-check-certificate https://raw.githubusercontent.com/Himly/vps-shell/master/AutoBackupToFtp.sh
-chmod +x ssrmu.sh
+chmod +x AutoBackupToFtp.sh
 bash AutoBackupToFtp.sh
 ```
 
