@@ -47,7 +47,7 @@ lsmod |grep 'bbr'
 
 ## BBR_POWERED.sh
 
-* **说明：Debian/Ubuntu TCP BBR 改进版/增强版
+* **说明**：Debian/Ubuntu TCP BBR 改进版/增强版
 * **准备**
   使用前,请确认能够开启BBR.
   可参考: [Debian/Ubuntu 开启 TCP BBR 拥塞算法](https://github.com/Himly/vps-shell/blob/master/README.md#bbrsh)
