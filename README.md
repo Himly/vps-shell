@@ -19,7 +19,7 @@ apt-get -y install wget
 
 ## BBR.sh
 
-* **说明：Debian/Ubuntu开启TCP BBR拥塞算法**
+* **说明：Debian/Ubuntu 开启 TCP BBR 拥塞算法**
 * **安装**
 ```bash
 wget --no-check-certificate -qO 'BBR.sh' 'https://raw.githubusercontent.com/Himly/vps-shell/master/BBR.sh' && chmod a+x BBR.sh
