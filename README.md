@@ -77,3 +77,5 @@ wget --no-check-certificate -qO 'BBR_POWERED.sh' 'https://raw.githubusercontent.
 可执行 `lsmod |grep 'bbr_powered'` ，结果不为空,则加载模块成功.
 
 可执行 `sysctl -w net.ipv4.tcp_congestion_control=bbr_powered` 使用此模块.
+
+**#以上只是说明,直接使用一键脚本即可#.**
