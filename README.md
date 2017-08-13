@@ -34,6 +34,32 @@ chmod +x AutoBackupToFtp.sh
 bash AutoBackupToFtp.sh
 ```
 
+* **利用 crontab 实现自动备份**
+```bash
+# CentOS系统安装crontab
+yum install -y crond
+# Debian/Ubuntu系统安装crontab
+apt-get install -y cron
+
+# CentOS系统检查cron的服务状态
+service crond status
+# Debian/Ubuntu系统检查cron的服务状态
+service cron status
+
+# CentOS系统手动启动crontab服务
+service crond start
+# Debian/Ubuntu系统手动启动crontab服务
+service cron start
+
+# 接下来打开定时设置，然后会出现文本编辑，按 I 键 进入编辑模式，根据需求添加下面的代码到这个文本编辑框内
+crontab -e
+
+# 每天2点10分重启一次AutoBackupToFtp.sh
+10 2 * * * /etc/init.d/ssr restart
+# 每隔2天的2点10分重启一次AutoBackupToFtp.sh
+10 2 */2 * * /etc/init.d/ssr restart
+```
+
 ## BBR.sh
 
 * **说明：Debian/Ubuntu 开启 TCP BBR 拥塞算法**
