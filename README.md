@@ -22,13 +22,13 @@ apt-get -y install wget
 * **说明**：自动备份网站文件和数据库并上传到FTP空间
 * **安装**
 ```bash
-#1.首先安装EMAIL发送组件
+# 1.首先安装EMAIL发送组件
 yum install sendmail mutt
 
-#2.新建本地备份目录
+# 2.新建本地备份目录
 mkdir -p /home/backup
 
-#3.安装AutoBackupToFtp.sh
+# 3.安装AutoBackupToFtp.sh
 wget -N --no-check-certificate https://raw.githubusercontent.com/Himly/vps-shell/master/AutoBackupToFtp.sh
 chmod +x AutoBackupToFtp.sh
 bash AutoBackupToFtp.sh
@@ -72,19 +72,19 @@ wget --no-check-certificate -qO 'BBR.sh' 'https://raw.githubusercontent.com/Himl
 
 * **使用说明**
 ```bash
-#普通模式,最后需要按下回车才会重启
+# 普通模式,最后需要按下回车才会重启
 bash BBR.sh
 
-#强制模式,全自动(如果中间不报错),不需要按下回车
+# 强制模式,全自动(如果中间不报错),不需要按下回车
 bash BBR.sh -f
 
-#指定安装内核版本,以4.11.9为例
+# 指定安装内核版本,以4.11.9为例
 bash BBR.sh -f v4.11.9
 ```
 
 * **检测**
 ```bash
-#重启后运行以下命令,结果不为空,则开启BBR成功
+# 重启后运行以下命令,结果不为空,则开启BBR成功
 lsmod |grep 'bbr'
 ```
 
