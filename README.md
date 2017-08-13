@@ -153,3 +153,30 @@ bash serverspeeder.sh
 ```bash
 chattr -i /serverspeeder/etc/apx* && /serverspeeder/bin/serverSpeeder.sh uninstall -f
 ```
+
+## install_fs.sh
+* **说明**：Finalspeed破解版一键自动安装包
+* **安装**
+```bash
+wget -N --no-check-certificate https://raw.githubusercontent.com/Himly/vps-shell/master/install_fs.sh
+chmod +x install_fs.sh
+bash install_fs.sh
+```
+
+* **卸载**
+```bash
+wget -N --no-check-certificate https://raw.githubusercontent.com/Himly/vps-shell/master/install_fs.sh && bash install_fs.sh uninstall
+```
+
+* **操作命令**
+
+**启动命令**:   `/etc/init.d/finalspeed start` 
+
+**停止命令**:   `/etc/init.d/finalspeed stop` 
+
+**状态命令**:   `/etc/init.d/finalspeed status` 
+
+* **安装路径**
+
+*安装路径*:   `/fs/` 
+*日志路径*:   `/fs/server.log` 
