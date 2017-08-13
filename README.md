@@ -34,6 +34,8 @@ chmod +x AutoBackupToFtp.sh
 bash AutoBackupToFtp.sh
 ```
 
+* [**提示：AutoBackupToFtp.sh中一些参数需要根据自己的实际情况进行修改**](https://ws1.sinaimg.cn/large/005YWgzely1fiif5k8wvxj30i808lq3r.jpg)
+
 * **利用 crontab 实现自动备份**
 ```bash
 # CentOS系统安装crontab
