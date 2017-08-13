@@ -5,12 +5,12 @@
 
 ### 基本库安装
 
-* CentOS
+* **CentOS**
 ```bash
 yum -y updade
 yum -y install wget
 ```
-* Debian/Ubuntu
+* **Debian/Ubuntu**
 ```bash
 apt-get -y update
 apt-get -y install wget
