@@ -178,5 +178,6 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/Himly/vps-shell
 
 * **安装路径**
 
-*安装路径*:   `/fs/` 
-*日志路径*:   `/fs/server.log` 
+**安装路径**:   `/fs/` 
+
+**日志路径**:   `/fs/server.log` 
