@@ -19,7 +19,7 @@ apt-get -y install wget
 
 ## AutoBackupToFtp.sh
 
-* **说明：自动备份网站文件和数据库并上传到FTP空间**
+* **说明**：自动备份网站文件和数据库并上传到FTP空间
 * **安装**
 ```bash
 #1.首先安装EMAIL发送组件
