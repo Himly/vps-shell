@@ -17,7 +17,7 @@ apt-get -y update
 apt-get -y install wget
 ```
 
-## BBR
+## BBR.sh
 
 * **说明：Debian/Ubuntu开启TCP BBR拥塞算法**
 * **安装**
