@@ -50,8 +50,9 @@ lsmod |grep 'bbr'
 * **说明**：Debian/Ubuntu TCP BBR 改进版/增强版
 * **准备**
 
-      使用前,请确认能够开启BBR.
-      可参考: [Debian/Ubuntu 开启 TCP BBR 拥塞算法](https://github.com/Himly/vps-shell/blob/master/README.md#bbrsh)
+  使用前,请确认能够开启BBR.
+
+  可参考: [Debian/Ubuntu 开启 TCP BBR 拥塞算法](https://github.com/Himly/vps-shell/blob/master/README.md#bbrsh)
 * **安装**
 ```bash
 wget --no-check-certificate -qO 'BBR_POWERED.sh' 'https://raw.githubusercontent.com/Himly/vps-shell/master/BBR_POWERED.sh' && chmod a+x BBR_POWERED.sh && bash BBR_POWERED.sh
