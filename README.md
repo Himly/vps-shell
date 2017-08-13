@@ -170,14 +170,14 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/Himly/vps-shell
 
 * **操作命令**
 
-**启动命令**:   `/etc/init.d/finalspeed start` 
+启动命令:   `/etc/init.d/finalspeed start` 
 
-**停止命令**:   `/etc/init.d/finalspeed stop` 
+停止命令:   `/etc/init.d/finalspeed stop` 
 
-**状态命令**:   `/etc/init.d/finalspeed status` 
+状态命令:   `/etc/init.d/finalspeed status` 
 
 * **安装路径**
 
-**安装路径**:   `/fs/` 
+安装路径:   `/fs/` 
 
-**日志路径**:   `/fs/server.log` 
+日志路径:   `/fs/server.log` 
