@@ -139,4 +139,17 @@ wget --no-check-certificate -qO 'BBR_POWERED.sh' 'https://raw.githubusercontent.
 
 **本脚本在Debian8,Debian9,Ubuntu16.04上通过测试**.
 
+## serverspeeder.sh
 
+* **说明：锐速破解版linux一键自动安装包**
+* **安装**
+```bash
+wget -N --no-check-certificate https://raw.githubusercontent.com/Himly/vps-shell/master/serverspeeder.sh
+chmod +x serverspeeder.sh
+bash serverspeeder.sh
+```
+
+* **卸载**
+```bash
+chattr -i /serverspeeder/etc/apx* && /serverspeeder/bin/serverSpeeder.sh uninstall -f
+```
