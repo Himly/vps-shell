@@ -86,7 +86,7 @@ wget --no-check-certificate -qO 'BBR_POWERED.sh' 'https://raw.githubusercontent.
 
 请重新开启**BBR**，或使用 `-f` 参数，可参考上面的准备步骤.
 
-如遇报错: `Error! Install make或Error! Install gcc` .
+如遇报错: `Error! Install make`或`Error! Install gcc` .
 
 首先尝试 `apt-get update` ，再次执行此脚本.
 
