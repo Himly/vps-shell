@@ -192,7 +192,7 @@ chmod +x speedtest.py
 ./speedtest.py
 ```
 
-* **使用说明**：
+* **使用说明**
 ```bash
     $ speedtest-cli -h
     usage: speedtest-cli [-h] [--no-download] [--no-upload] [--bytes] [--share]
