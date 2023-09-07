@@ -21,6 +21,7 @@ apt-get -y install wget
 
 ```bash
 bash <(curl -sSL https://raw.githubusercontent.com/Himly/vps-shell/master/xray/geo_xui.sh)
+```
 
 ## AutoBackupToFtp.sh
 
