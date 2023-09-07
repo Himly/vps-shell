@@ -17,8 +17,7 @@ apt-get -y update
 apt-get -y install wget
 ```
 
-### 一键更新 Geo 文件
----
+## 一键更新 Geo 文件
 ```bash
 bash <(curl -sSL https://raw.githubusercontent.com/Himly/vps-shell/master/xray/geo_xui.sh)
 ```
