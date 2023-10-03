@@ -1,0 +1,17 @@
+server: 10.0.0.1:8443 #修改
+
+auth: Himly #修改
+
+bandwidth:
+  up: 30 mbps
+  down: 150 mbps
+
+tls:
+  sni: himly.example.com #修改
+  insecure: false #使用自签证书时需要改成true
+
+socks5:
+  listen: 127.0.0.1:10808
+
+http:
+  listen: 127.0.0.1:10809
