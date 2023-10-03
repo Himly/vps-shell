@@ -1,0 +1,19 @@
+# listen: :8443
+
+tls:
+  cert: /etc/hysteria/server.crt
+  key: /etc/hysteria/server.key
+
+auth:
+  type: password
+  password: {{pkg}}
+
+masquerade: 
+  type: proxy
+  proxy:
+    url: https://your.domain.com # 你的域名
+    rewriteHost: true
+
+acl:
+  inline: 
+    - reject(geoip:cn)
