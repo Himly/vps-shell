@@ -1,0 +1,123 @@
+{
+  "log": {
+    "loglevel": "warning"
+  },
+  "api": {
+    "services": [
+      "HandlerService",
+      "LoggerService",
+      "StatsService"
+    ],
+    "tag": "api"
+  },
+  "dns": {
+    "servers": [
+      "https+local://1.1.1.1/dns-query"
+    ],
+    "queryStrategy": "UseIPv4"
+  },
+  "routing": {
+    "domainStrategy": "IPIfNonMatch",
+    "rules": [
+      {
+        "type": "field",
+        "domain": [
+          "domain:gstatic.com"
+        ],
+        "outboundTag": "IPv4-out"
+      },
+      {
+        "type": "field",
+        "ip": [
+		  "geoip:cn"
+		],
+        "outboundTag": "block"
+      },
+      {
+        "type": "field",
+        "domain": [
+		  "geosite:cn"
+		],
+        "outboundTag": "block"
+      },
+      {
+        "type": "field",
+        "domain": [
+          "geosite:category-ads-all"
+        ],
+        "outboundTag": "block"
+      },
+	  {
+	    "type": "field",
+        "protocol": [
+          "bittorrent"
+        ],
+        "outboundTag": "block"
+      },
+      {
+        "type": "field",
+        "network": "udp,tcp",
+        "outboundTag": "IPv4-out"
+      }
+    ]
+  },
+  "inbounds": [
+    {
+      "port": 443, # 更改端口
+      "protocol": "shadowsocks",
+      "settings": {
+        "password": "{{psk}}", # 更改密码
+        "method": "2022-blake3-chacha20-poly1305",
+		"level": 0,
+        "email": "demo@google.com", # 更改邮箱
+        "network": "tcp"
+      },
+	  "tag": "inbound-ss",
+      "sniffing": {
+        "enabled": true,
+        "destOverride": ["http", "tls", "fakedns"]
+      }
+    }
+   ],
+  "outbounds": [
+    {
+       "protocol":"freedom",
+       "settings":{
+           "domainStrategy":"UseIPv4"
+       },
+       "tag":"IPv4-out"
+    },
+    {
+       "protocol":"freedom",
+       "settings":{
+           "domainStrategy":"UseIPv6"
+       },
+       "tag":"IPv6-out"
+    },
+    {
+      "tag": "direct",
+      "protocol": "freedom"
+    },
+    {
+      "tag": "block",
+      "protocol": "blackhole"
+    }
+  ],
+  "policy": {
+    "levels": {
+      "0": {
+        "handshake": 10,
+        "connIdle": 100,
+        "uplinkOnly": 2,
+        "downlinkOnly": 3,
+        "statsUserUplink": true,
+        "statsUserDownlink": true,
+        "bufferSize": 10240
+      }
+    },
+    "system": {
+      "statsInboundDownlink": true,
+      "statsInboundUplink": true
+    }
+  }
+}
