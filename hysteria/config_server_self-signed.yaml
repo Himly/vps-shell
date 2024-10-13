@@ -1,0 +1,16 @@
+listen: :443 #监听端口
+
+#使用自签证书
+tls:
+  cert: /etc/hysteria/server.crt
+  key: /etc/hysteria/server.key
+
+auth:
+  type: password
+  password: {{passwd}} #设置认证密码
+  
+masquerade:
+  type: proxy
+  proxy:
+    url: https://bing.com #伪装网址
+    rewriteHost: true
