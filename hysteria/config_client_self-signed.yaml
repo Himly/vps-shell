@@ -1,0 +1,15 @@
+server: {ip}:{port}
+auth: {{passwd}}
+
+bandwidth:
+  up: {{上行带宽}} mbps
+  down: {{下行带宽}} mbps
+  
+tls:
+  sni: bing.com
+  insecure: true #使用自签时需要改成true
+
+socks5:
+  listen: 127.0.0.1:1080
+http:
+  listen: 127.0.0.1:8080
